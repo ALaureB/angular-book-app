@@ -1,0 +1,16 @@
+.parallax {
+    background-image: url("../assets/backgroundBook.jpg");
+    min-height: 350px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    color: white;
+    position: relative;
+    top: 220px;
+}

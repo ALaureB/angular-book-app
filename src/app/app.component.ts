@@ -14,7 +14,7 @@ export class AppComponent {
       authDomain: 'angular-book-app.firebaseapp.com',
       databaseURL: 'https://angular-book-app.firebaseio.com',
       projectId: 'angular-book-app',
-      storageBucket: '',
+      storageBucket: 'angular-book-app.appspot.com',
       messagingSenderId: '20721535563'
     };
     firebase.initializeApp(config);

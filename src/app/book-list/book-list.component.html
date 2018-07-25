@@ -1,3 +1,16 @@
-<p>
-  book-list works!
-</p>
+<div id="bookList">
+  <h2 class="text-center mb-4">Books list</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let book of books; let i = index" >
+      <button type="button" class="close" aria-label="Close" (click)="onDeleteBook(book)">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h3 class="list-group-item-heading">{{ book.title }}</h3>
+      <p class="list-group-item-text">{{ book.author }}</p>
+      <a (click)="onViewBook(i)">Details</a>
+    </li>
+  </ul>
+  <div class="text-center mt-4">
+    <button class="btn personalButton" (click)="onNewBook()">Add a book</button>
+  </div>
+</div>
